@@ -8,7 +8,7 @@
 
 	<name>Liquibase Extension: Number (1, 0) Convert to boolean with Postgres</name>
 	<description>Number (1, 0) Convert to boolean with Postgres</description>
-	<!-- <url>https://github.com/liquibase/liquibase-redshift</url> -->
+	<url>https://github.com/szandany/liquibase_extension_example</url>
 
 	<organization>
 		<name>Liquibase.org</name>
@@ -23,35 +23,27 @@
 	</licenses>
 
 	<issueManagement>
-		<url>https://github.com/liquibase/liquibase-redshift/issues</url>
+		<url>https://github.com/szandany/liquibase_extension_example/issues</url>
 	</issueManagement>
 
     <scm>
-		<connection>scm:git:http://github.com/liquibase/liquibase-redshift.git</connection>
-		<url>https://github.com/liquibase/liquibase-redshift</url>
+		<connection>scm:git:http://github.com/szandany/liquibase_extension_example.git</connection>
+		<url>https://github.com/szandany/liquibase_extension_example</url>
         <tag>HEAD</tag>
     </scm>
 
 	<developers>
 		<developer>
-			<id>nvoxland</id>
-			<name>Nathan Voxland</name>
-			<email>nathan.voxland@liquibase.org</email>
-			<url>http://nathan.voxland.net</url>
-			<organizationUrl>http://nathan.voxland.net/</organizationUrl>
+			<id>szandany</id>
+			<name>Tsvi Zandany</name>
+			<email>szandany@liquibase.org</email>
 			<roles>
-				<role>architect</role>
-				<role>developer</role>
+				<role>Engineer</role>
+				<role>SA</role>
 			</roles>
 			<timezone>-6</timezone>
 		</developer>
 	</developers>
-	<repositories>
-		<repository>
-			<id>redshift</id>
-			<url>http://redshift-maven-repository.s3-website-us-east-1.amazonaws.com/release</url>
-		</repository>
-	</repositories>
 	<dependencies>
 		<dependency>
 			<groupId>org.liquibase</groupId>
@@ -64,17 +56,6 @@
 			<scope>test</scope>
 			<version>4.13.2</version>
 		</dependency>
-		<!-- <dependency>
-			<groupId>org.liquibase</groupId>
-			<artifactId>liquibase-test-harness</artifactId>
-			<version>1.0.3</version>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>com.amazon.redshift</groupId>
-			<artifactId>redshift-jdbc42</artifactId>
-			<version>2.1.0.1</version>
-		</dependency> -->
 	</dependencies>
 
 	<build>
