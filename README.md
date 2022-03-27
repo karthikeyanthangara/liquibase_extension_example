@@ -1,7 +1,10 @@
 # liquibase_extension_example
 This is a Liquibase extension example.
-It will convert any `NUMBER(1,0)` datatype in a modeled changeset to `BOOLEAN` when running against a PostgreSQL database.
-
+It will convert any `NUMBER(1,0)` datatype in a modeled changeset to `BOOLEAN` when running against a PostgreSQL database during runtime update.
+or
+It will generate a formatted sql changelog and convert any `NUMBER(1,0)` datatype to a `BOOLEAN` when the resulting changelog name includes `postgresql` database name.
+For example:
+`liquibase --changeLogFile=mychangelog.postgresql.sql`
 
 
 # Notes
